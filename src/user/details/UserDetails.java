@@ -6,10 +6,14 @@ public class UserDetails {
  private String firstname, lastname, address, city, phonenumber, zip, email;
  // getters and setters
  // setter for name
- public void setName(String FirstName, String LastName)
+ 
+ public void setFname(String FirstName)
  {
      this.firstname = FirstName;
-     this.lastname = LastName;
+ }
+ public void setLname( String LastName)
+ {
+	 this.lastname = LastName;
  }
  // getter for name
  public String getFirstname()
@@ -21,11 +25,17 @@ public class UserDetails {
      return lastname;
  }
  //setter for address
- public void setAddress(String address1,String city1, String zip1)
+ public void setAddress(String address1)
  {
      this.address = address1;
-     this.city = city1;
-     this.zip = zip1;
+ }
+ public void setCity(String city1)
+ {
+	 this.city = city1;
+ }
+ public void setZip(String zip1)
+ {
+	 this.zip = zip1;
  }
  // getter for address
  public String getAddress()
@@ -41,9 +51,12 @@ public class UserDetails {
      return zip;
  }
  // Setter for Personal
- public void setPersonal(String phnNumb, String email1)
+ public void setPhonenumber(String phnNumb)
  {
      this.phonenumber = phnNumb;
+ }
+ public void setEmail(String email1)
+ {
      this.email = email1;
  }
  // getter for personal
