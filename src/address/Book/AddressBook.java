@@ -1,10 +1,10 @@
 package address.Book;
 
+
+import add.contact.AddContact;
 import user.details.UserDetails;
 
-import java.util.Scanner;
 public class AddressBook {
-	static Scanner sc = new Scanner(System.in);
     public static void main(String[] args){
     	
     	//	User defined in Program
@@ -20,31 +20,8 @@ public class AddressBook {
         System.out.print("\n ADDRESS = "+obj.getAddress()+", "+obj.getCity()+", "+obj.getZip());
         System.out.println("\n CONTACT = "+obj.getPhonenumber()+"\n Email = "+obj.getEmail() );
         
+        AddContact obj1 = new AddContact();
+        obj1.addcontact();
         // adding the another contact using Scanner
-        
-        
-        System.out.print("enter the number of Contacts to be added = ");
-        int n = sc.nextInt();
-        for(int i = 0; i < n; i++) {
-        	System.out.print("enter the First name = ");
-	        obj.setFname(sc.next());
-	        System.out.print("enter the Last name = ");
-	        obj.setLname(sc.next());
-	        System.out.print("enter the Address = ");
-	        obj.setAddress(sc.next());
-	        System.out.print("enter the city = ");
-	        obj.setCity(sc.next());
-	        System.out.print("enter the zip = ");
-	        obj.setZip(sc.next());
-	        System.out.print("enter the phonenumber = ");
-	        obj.setPhonenumber(sc.next());
-	        System.out.print("enter the Email = ");
-	        obj.setEmail(sc.next());
-	 
-        System.out.print("\n"+"\t ADDRESS BOOK"+"\n NAME = "+obj.getFirstname()+obj.getLastname());
-        System.out.print("\n ADDRESS = "+obj.getAddress()+", "+obj.getCity()+", "+obj.getZip());
-        System.out.println("\n CONTACT = "+obj.getPhonenumber()+"\n Email = "+obj.getEmail() );
-        }
-        sc.close();      
     }
 }
