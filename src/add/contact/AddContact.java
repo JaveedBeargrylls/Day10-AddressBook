@@ -8,8 +8,6 @@ public class AddContact {
 		Scanner sc = new Scanner(System.in);
 		UserDetails obj = new UserDetails();
 		System.out.print("enter the number of Contacts to be added = ");
-	    int n = sc.nextInt();
-	    for(int i = 0; i < n; i++) {
 	    	System.out.print("enter the First name = ");
 	        obj.setFname(sc.next());
 	        System.out.print("enter the Last name = ");
@@ -28,7 +26,6 @@ public class AddContact {
 	    System.out.print("\n"+"\t ADDRESS BOOK"+"\n NAME = "+obj.getFirstname()+obj.getLastname());
 	    System.out.print("\n ADDRESS = "+obj.getAddress()+", "+obj.getCity()+", "+obj.getZip());
 	    System.out.println("\n CONTACT = "+obj.getPhonenumber()+"\n Email = "+obj.getEmail() );
-	    }
 	    sc.close();      
 	}
 }

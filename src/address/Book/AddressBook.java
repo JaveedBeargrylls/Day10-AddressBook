@@ -23,5 +23,5 @@ public class AddressBook {
         AddContact obj1 = new AddContact();
         obj1.addcontact();
         // adding the another contact using Scanner
-    }
+  }
 }
